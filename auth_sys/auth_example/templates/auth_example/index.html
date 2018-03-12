@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+{% if user.is_authenticated %}
+<h2>Welcome {{user.username}}</h2>
+{% else %}
+Welcome to home page.
+{% endif %}
+</body>
+</html>
